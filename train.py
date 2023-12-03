@@ -49,4 +49,4 @@ f1_score = evaluator.evaluate(test_predictions)
 print("Evaluated F1 Score: {:.4f}".format(f1_score))
 
 # Saving the trained model
-trained_svm_model.save("file:///home/ec2-user/trainingweights")
+trained_svm_model.save("file:///home/ec2-user/assignment2/weights")
