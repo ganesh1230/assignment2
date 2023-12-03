@@ -16,7 +16,7 @@ CORS(app)
 
 # Initialize Spark session for inference
 spark = SparkSession.builder.appName("Inference").getOrCreate()
-svm_model = LinearSVCModel.load("/app/trainingweights")  # Changed to SVM Model
+svm_model = LinearSVCModel.load("weights")  # Changed to SVM Model
 
 # Define schema for incoming CSV data
 data_schema = StructType([
